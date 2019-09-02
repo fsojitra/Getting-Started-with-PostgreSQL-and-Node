@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Users</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-offset-3">
+                <center>
+                    <h1>Users</h1>
+                </center>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <table class="table table-hover table-dark">
+                                    <thead>
+                                        <tr class="bg-primary">
+                                            <td scope="col">UserName
+                                            </td>
+                                            <td scope="col">Email
+                                            </td>
+                                            <td scope="col">Phone
+                                            </td>
+                                            <td scope="col">City
+                                            </td>
+                                            <td scope="col">Action
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <% for (var i = 0; i < user.length; i++) { %>
+                                    <tbody>
+                                        <tr>
+                                            <td><%= user[i].name %>
+                                            </td>
+                                            <td><%= user[i].email %>
+                                            </td>
+                                            <td><%= user[i].contact_number %>
+                                            </td>
+                                            <td><%= user[i].city %>
+                                            </td>
+                                            <td>
+                                                <form action="/getUpdateUser" method="post">
+                                                    <input type="hidden" name="id" value="<%= user[i].id %>"/>
+                                                    <button type="submit"
+                                                        class="btn btn-success">Update</button>
+                                                </form>
+                                                <form action="/deleteUser" method="post">
+                                                    <input type="hidden" name="id" value="<%= user[i].id %>"/>
+                                                    <button type="submit"
+                                                        class="btn btn-success">Delete</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <% } %>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
