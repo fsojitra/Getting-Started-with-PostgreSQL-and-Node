@@ -25,7 +25,7 @@ Below listed things you need to have in your system to run this code
 
 * Now that db is created follw below steps to setup
 
-    1. `cd PostgreSQL-and-Node`
+    1. `cd Getting-Started-with-PostgreSQL-and-Node`
     2. `npm install`
     3. `node db/db_setup.js` (this will setup basic table and add some dummy data to start with)
     4. `npm start`
