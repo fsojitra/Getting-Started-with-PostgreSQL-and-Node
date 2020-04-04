@@ -14,8 +14,8 @@ Below listed things you need to have in your system to run this code
 
 * OK, so i am assuming that you already have prerequisites mentioned above and also know how to use psql from command line :thinking:, if you are new and don't know much about PostgreSQL than follow link below. If you don't like command line that much than you can totally use pgAdmin.
 
-    [PSQL - Commands](https://www.postgresqltutorial.com/psql-commands/)
-    [To download and install PostgreSQL and pgAdmin](https://www.guru99.com/download-install-postgresql.html)
+    * [PSQL - Commands](https://www.postgresqltutorial.com/psql-commands/)
+    * [To download and install PostgreSQL and pgAdmin](https://www.guru99.com/download-install-postgresql.html)
 
 * Creting Database
 
