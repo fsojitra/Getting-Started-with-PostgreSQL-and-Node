@@ -1,4 +1,4 @@
-#Getting Started with PostgreSQL and Node
+# Getting Started with PostgreSQL and Node
 > An PostgreSQL + Node/Express + EJS example you can add, update and delete user data.
 
 ## Prerequisites
